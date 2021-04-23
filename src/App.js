@@ -18,6 +18,7 @@ import {auth, createUserProfileDocument} from './firebase/firebase.utils';
 import {setCurrentUser} from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors'
 //import { createStore } from 'redux';
+//make it count
 
 class App extends React.Component{
   
