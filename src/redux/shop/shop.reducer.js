@@ -1,5 +1,6 @@
 import SHOP_DATA from './shop.data';
 
+
 const INITIAL_STATE = {
     collections: SHOP_DATA,
 };
@@ -11,4 +12,4 @@ const ShopReducer = (state = INITIAL_STATE, action) => {
     }
 }
 
-export default ShopReducer;
+export default  ShopReducer;
