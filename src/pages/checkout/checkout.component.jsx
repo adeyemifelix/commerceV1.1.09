@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import CheckoutItem from '../../components/checkout-item/checkout-item.component'
+import PayStackConfig from '../../components/paystack-button/paystack-button.component'
 
 import { 
     selectCartItems, 
@@ -35,10 +36,11 @@ const CheckoutPage = ({cartItems, total}) => (
                 <CheckoutItem key={cartItem.id} cartItem={cartItem}/>
             ))
         }
-        <div className='total'>
-            <span>TOTAL: N{total}</span>
+        <div className='total'>TOTAL: N{total}</div>
+        <div className='test-warning'>
+            *Kindly note that this is just a test demo with payment servicing company integration, PayStack* 
         </div>
-        
+       <span className='button'> <PayStackConfig price={total}/> </span>
     </div>
 );
 
